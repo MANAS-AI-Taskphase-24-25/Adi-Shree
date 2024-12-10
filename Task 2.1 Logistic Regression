@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-train_data = pd.read_csv("/kaggle/input/train-1/Gotem Pumpkins.csv", index_col=0)
-test_data = pd.read_csv("/kaggle/input/test-1/Freyja_Pumpkins.csv", index_col=0)
+train_data = pd.read_csv("//input/train-1/Gotem Pumpkins.csv", index_col=0)
+test_data = pd.read_csv("//input/test-1/Freyja_Pumpkins.csv", index_col=0)
 
 class_labels = train_data['Class'].unique()
 class_mapping = {label: idx for idx, label in enumerate(class_labels)}
